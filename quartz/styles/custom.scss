@@ -35,3 +35,29 @@
     color: var(--secondary) !important; /* 상근님 블로그의 포인트 색상 */
   }
 }
+
+/* Properties 박스를 투명하고 깔끔하게 변경 */
+.obsidian-properties {
+  border: none !important; /* 바깥 테두리 제거 */
+  background: transparent !important; /* 배경 투명하게 */
+  padding: 0.5rem 0 !important;
+
+  /* 내부 표(Grid)의 격자 무늬 테두리 제거 */
+  .obsidian-property, .obsidian-property-key, .obsidian-property-value {
+    border: none !important;
+    background: transparent !important;
+  }
+
+  /* 왼쪽 항목 이름(tags 등)을 약간 흐리게 감각적으로 처리 */
+  .obsidian-property-key {
+    color: var(--gray) !important;
+    font-size: 0.9rem;
+  }
+}
+
+/* 접기 버튼이 있는 상단 바 영역 디자인 미니멀화 */
+.obsidian-properties-header {
+  border-bottom: 1px solid var(--lightgray) !important;
+  color: var(--darkgray) !important;
+  font-size: 0.95rem;
+}
