@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: ☕️ lsgeun 개발 블로그
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: ko-KR
   baseUrl: lsgeun.github.io
   ignorePatterns:
     - private
@@ -80,6 +80,8 @@ plugins:
   - source: github:quartz-community/table-of-contents
     enabled: true
     order: 50
+    options:
+      
     layout:
       position: right
       priority: 30
@@ -152,6 +154,8 @@ plugins:
     enabled: true
   - source: github:quartz-community/tag-page
     enabled: true
+    options:
+      prefixTags: true
   - source: github:quartz-community/explorer
     enabled: true
     layout:
@@ -202,7 +206,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35

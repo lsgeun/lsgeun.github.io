@@ -1,5 +1,5 @@
 ---
-title: 👨‍💻 소개합니다
+title: 주인장 소개
 tags:
   - 
 created: 2026-07-17
