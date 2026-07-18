@@ -64,44 +64,45 @@
 }
 
 // * TAG
-/* 태그 리스트 전체 정렬 */
-ul.tags {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 0.5rem 0;
+/* 1. Properties 내부 태그 컨테이너 정렬 */
+.note-properties-tags {
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  align-items: center !important;
+}
 
-  li {
-    padding-left: 0 !important; /* 기본 리스트 여백 제거 */
-    margin: 0 !important;
+/* 2. 태그 사이의 쉼표(,) 텍스트 숨기기 */
+.note-properties-separator {
+  display: none !important;
+}
+
+/* 3. 태그 링크 개별 디자인 (알약 모양 뱃지 구현) */
+.note-properties-tags a.tag-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.25rem 0.65rem !important;
+  background-color: var(--highlight) !important; /* 테마 연한 배경색 */
+  color: var(--secondary) !important; /* 테마 포인트 글자색 */
+  border-radius: 50px !important; /* 완벽한 알약 모양 */
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  border: none !important;
+  transition: all 0.2s ease-in-out !important;
+  line-height: 1 !important;
+
+  /* 글자 앞에 자동으로 # 붙이기 */
+  &::before {
+    content: "#" !important;
+    margin-right: 0.15rem !important;
+    opacity: 0.7 !important;
   }
 
-  /* 태그 링크 개별 스타일 정의 */
-  a.tag-link {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    background-color: var(--highlight); /* 테마 기본 강조 배경색 활용 */
-    color: var(--secondary) !important; /* 포인트 테마 색상 적용 */
-    border-radius: 8px; /* 둥근 모서리 */
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.2s ease;
-
-    /* 가상 요소를 이용해 태그 앞에 자동으로 # 붙이기 */
-    &::before {
-      content: "#";
-      margin-right: 0.1rem;
-      opacity: 0.8;
-    }
-
-    /* 마우스 호버 시 효과 */
-    &:hover {
-      background-color: var(--tertiary);
-      color: var(--light) !important;
-      transform: translateY(-1px); /* 살짝 떠오르는 느낌 */
-    }
+  /* 마우스 호버 시 효과 */
+  &:hover {
+    background-color: var(--secondary) !important;
+    color: var(--light) !important;
+    transform: translateY(-1px) !important; /* 살짝 떠오르는 효과 */
   }
 }
