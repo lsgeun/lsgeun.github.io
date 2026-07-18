@@ -214,10 +214,15 @@ plugins:
       priority: 5
       condition: not-index
   - source: github:quartz-community/comments
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: lsgeun/lsgeun.github.io
+        repoId: R_kgDOTbS47g
+        category: Announcements
+        categoryId: DIC_kwDOTbS47s4DBb8l
+        lang: ko
     layout:
       position: afterBody
       priority: 10
