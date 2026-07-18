@@ -224,7 +224,7 @@ plugins:
         categoryId: DIC_kwDOTbS47s4DBb8l
         lang: ko
     layout:
-      position: afterBody
+      position: afterBody 
       priority: 10
   - source: github:quartz-community/footer
     enabled: true
