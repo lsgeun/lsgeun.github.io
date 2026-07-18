@@ -1,5 +1,6 @@
 @use "./variables.scss" as *;
 
+// * TOC
 /* 1. 목차(TOC) 구조 및 깊이감(들여쓰기) 설정 */
 .toc-content {
   list-style: none;
@@ -60,4 +61,47 @@
   border-bottom: 1px solid var(--lightgray) !important;
   color: var(--darkgray) !important;
   font-size: 0.95rem;
+}
+
+// * TAG
+/* 태그 리스트 전체 정렬 */
+ul.tags {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+
+  li {
+    padding-left: 0 !important; /* 기본 리스트 여백 제거 */
+    margin: 0 !important;
+  }
+
+  /* 태그 링크 개별 스타일 정의 */
+  a.tag-link {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--highlight); /* 테마 기본 강조 배경색 활용 */
+    color: var(--secondary) !important; /* 포인트 테마 색상 적용 */
+    border-radius: 8px; /* 둥근 모서리 */
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    /* 가상 요소를 이용해 태그 앞에 자동으로 # 붙이기 */
+    &::before {
+      content: "#";
+      margin-right: 0.1rem;
+      opacity: 0.8;
+    }
+
+    /* 마우스 호버 시 효과 */
+    &:hover {
+      background-color: var(--tertiary);
+      color: var(--light) !important;
+      transform: translateY(-1px); /* 살짝 떠오르는 느낌 */
+    }
+  }
 }
