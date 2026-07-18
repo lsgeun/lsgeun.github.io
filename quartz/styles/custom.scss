@@ -63,46 +63,77 @@
   font-size: 0.95rem;
 }
 
-// * TAG
-/* 1. Properties 내부 태그 컨테이너 정렬 */
-.note-properties-tags {
-  display: inline-flex !important;
-  flex-wrap: wrap !important;
-  gap: 0.5rem !important;
-  align-items: center !important;
-}
+// * PROPERTIES
+/* ==========================================================================
+   옵시디언 스타일 속성(Properties) 커스텀
+   ========================================================================== */
 
-/* 2. 태그 사이의 쉼표(,) 텍스트 숨기기 */
-.note-properties-separator {
-  display: none !important;
-}
-
-/* 3. 태그 링크 개별 디자인 (알약 모양 뱃지 구현) */
-.note-properties-tags a.tag-link {
-  display: inline-flex !important;
-  align-items: center !important;
-  padding: 0.25rem 0.65rem !important;
-  background-color: var(--highlight) !important; /* 테마 연한 배경색 */
-  color: var(--secondary) !important; /* 테마 포인트 글자색 */
-  border-radius: 50px !important; /* 완벽한 알약 모양 */
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
-  text-decoration: none !important;
+/* 1. 전체 프로퍼티 컨테이너 배경 및 테두리 초기화 */
+.note-properties {
   border: none !important;
-  transition: all 0.2s ease-in-out !important;
-  line-height: 1 !important;
+  background: transparent !important;
+  padding: 0.5rem 0 !important;
+  box-shadow: none !important;
+}
 
-  /* 글자 앞에 자동으로 # 붙이기 */
-  &::before {
-    content: "#" !important;
-    margin-right: 0.15rem !important;
-    opacity: 0.7 !important;
+/* 상단 'Properties' 접기 바 영역 미니멀화 */
+.note-properties-header {
+  border-bottom: 1px solid var(--lightgray) !important;
+  padding-bottom: 0.4rem !important;
+  color: var(--gray) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+}
+
+/* 2. 표(Table) 구조 해제 및 테두리 완벽 제거 */
+.note-properties-table {
+  border: none !important;
+  border-collapse: collapse !important;
+  margin-top: 0.75rem !important;
+  width: 100% !important;
+
+  tr.note-properties-row {
+    border: none !important;
+    background: transparent !important;
   }
 
-  /* 마우스 호버 시 효과 */
+  /* 왼쪽 항목 이름 열 (tags 등) */
+  td.note-properties-key {
+    border: none !important;
+    background: transparent !important;
+    color: var(--darkgray) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    width: 120px !important; /* 왼쪽 타이틀 너비 고정 */
+    padding: 0.5rem 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    
+    /* 옵시디언 아이콘 느낌을 주려면 아이콘 가상요소를 넣을 수도 있지만, 
+       텍스트 자체만으로 깔끔하게 떨어지게 여백을 조정합니다 */
+  }
+
+  /* 오른쪽 값 영역 열 (태그 뱃지들이 담긴 곳) */
+  td.note-properties-value {
+    border: none !important;
+    background: transparent !important;
+    padding: 0.5rem 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+  }
+}
+
+/* 3. 태그 뱃지 간격 및 외형 미세 튜닝 (선택 사항: 투명도나 연한 테두리 추가) */
+.note-properties-tags a.tag-link {
+  background-color: transparent !important; /* 채워진 배경 대신 옵시디언처럼 흰 배경에 테두리 스타일 원할 시 */
+  border: 1px solid var(--lightgray) !important; /* 연한 테두리 */
+  color: var(--darkgray) !important; /* 글자색을 본문과 매칭 */
+  padding: 0.15rem 0.5rem !important;
+  font-size: 0.85rem !important;
+  
   &:hover {
-    background-color: var(--secondary) !important;
-    color: var(--light) !important;
-    transform: translateY(-1px) !important; /* 살짝 떠오르는 효과 */
+    background-color: var(--highlight) !important;
+    color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
   }
 }
