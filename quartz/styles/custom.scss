@@ -137,8 +137,3 @@
     border-color: var(--secondary) !important;
   }
 }
-
-// * 최근 게시글
-.recent-li:has(a[href="./404"]) {
-    display: none !important;
-}
