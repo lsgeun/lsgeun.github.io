@@ -238,6 +238,13 @@ plugins:
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
     enabled: true
+    options:
+      limit: 5
+      showTags: false
+      hideTagPages: true
+    layout:
+      position: right
+      priority: 60
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
