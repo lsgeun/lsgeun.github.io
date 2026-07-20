@@ -156,6 +156,8 @@ plugins:
       prefixTags: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      sort: date
     layout:
       position: left
       priority: 50
@@ -236,6 +238,11 @@ plugins:
         LinkedIn: https://www.linkedin.com/in/상근-이-8958aa3b3
   - source: github:quartz-community/recent-notes
     enabled: true
+    options:
+      limit: 4
+    layout:
+      position: right
+      priority: 40
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
