@@ -1,7 +1,6 @@
 ---
 title: lsgeun 개발 블로그
 tags:
-  - dfdsa
 created: 2026-07-17
 ---
 

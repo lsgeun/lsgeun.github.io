@@ -241,7 +241,6 @@ plugins:
     options:
       limit: 5
       showTags: false
-      hideTagPages: true
     layout:
       position: right
       priority: 60
