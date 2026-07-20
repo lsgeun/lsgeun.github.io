@@ -80,8 +80,6 @@ plugins:
   - source: github:quartz-community/table-of-contents
     enabled: true
     order: 50
-    options:
-      
     layout:
       position: right
       priority: 30
@@ -239,11 +237,10 @@ plugins:
   - source: github:quartz-community/recent-notes
     enabled: true
     options:
-      limit: 5
       showTags: false
     layout:
       position: right
-      priority: 60
+      priority: 40
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
