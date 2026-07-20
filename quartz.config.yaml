@@ -82,7 +82,7 @@ plugins:
     order: 50
     layout:
       position: right
-      priority: 30
+      priority: 10
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
@@ -152,8 +152,6 @@ plugins:
     enabled: true
   - source: github:quartz-community/tag-page
     enabled: true
-    options:
-      prefixTags: true
   - source: github:quartz-community/explorer
     enabled: true
     options:
@@ -178,7 +176,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 50
+      priority: 20
   - source: github:quartz-community/article-title
     enabled: true
     layout:
@@ -196,6 +194,14 @@ plugins:
       priority: 30
   - source: github:quartz-community/page-title
     enabled: true
+    options:
+      # 제목 아래에 들어갈 문구와 링크를 HTML 태그로 작성합니다.
+      description: |
+        <div class="title-subtitle">
+          asdfsda <br/>
+          <a href="https://github.com/lsgeun" target="_blank">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/상근-이-8958aa3b3" target="_blank">LinkedIn</a>
+        </div>
     layout:
       position: left
       priority: 10
@@ -229,7 +235,7 @@ plugins:
         lang: ko
     layout:
       position: afterBody
-      priority: 10
+      priority: 20
   - source: github:quartz-community/footer
     enabled: true
     options:
@@ -238,9 +244,6 @@ plugins:
         LinkedIn: https://www.linkedin.com/in/상근-이-8958aa3b3
   - source: github:quartz-community/recent-notes
     enabled: false
-    layout:
-      position: right
-      priority: 40
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
