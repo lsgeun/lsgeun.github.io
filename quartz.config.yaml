@@ -110,6 +110,13 @@ plugins:
     order: 92
   - source: github:quartz-community/fonts
     enabled: true
+    options:
+      body: '"Inter", sans-serif'
+      header: '"Playfair Display", serif'
+      code: '"JetBrains Mono", monospace'
+      h1: '"Single Day", serif'
+      h2: '"Lora", serif'
+      h3: '"Single Day", serif'
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
@@ -154,6 +161,10 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Explorer
+      folderClickBehavior: collapse
+      useSavedState: true
     layout:
       position: left
       priority: 50
