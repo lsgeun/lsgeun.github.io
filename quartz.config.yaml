@@ -154,8 +154,6 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
-    options:
-      sort: date
     layout:
       position: left
       priority: 50
@@ -218,9 +216,9 @@ plugins:
       priority: 35
       group: toolbar
   - source: github:quartz-community/breadcrumbs
-    enabled: false
+    enabled: true
     layout:
-      position: beforeBody
+      position: beforeBody  
       priority: 5
       condition: not-index
   - source: github:quartz-community/comments
