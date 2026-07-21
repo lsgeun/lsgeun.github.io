@@ -110,13 +110,6 @@ plugins:
     order: 92
   - source: github:quartz-community/fonts
     enabled: true
-    options:
-      body: '"Inter", sans-serif'
-      header: '"Playfair Display", serif'
-      code: '"JetBrains Mono", monospace'
-      h1: '"Single Day", serif'
-      h2: '"Lora", serif'
-      h3: '"Single Day", serif'
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
@@ -162,9 +155,9 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
-      title: Explorer
+      title: 글
+      folderDefaultState: collapsed
       folderClickBehavior: collapse
-      useSavedState: true
     layout:
       position: left
       priority: 50
@@ -203,14 +196,6 @@ plugins:
       priority: 30
   - source: github:quartz-community/page-title
     enabled: true
-    options:
-      # 제목 아래에 들어갈 문구와 링크를 HTML 태그로 작성합니다.
-      description: |
-        <div class="title-subtitle">
-          asdfsda <br/>
-          <a href="https://github.com/lsgeun" target="_blank">GitHub</a> | 
-          <a href="https://www.linkedin.com/in/상근-이-8958aa3b3" target="_blank">LinkedIn</a>
-        </div>
     layout:
       position: left
       priority: 10
@@ -251,6 +236,7 @@ plugins:
       links:
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/상근-이-8958aa3b3
+        Gmail: mailto:zlwkr1974@gmail.com
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
