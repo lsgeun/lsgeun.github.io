@@ -233,6 +233,8 @@ plugins:
         Home: /
         About: /about
         Timeline: /timeline
+        MOC: /moc
+        Tag: /tag
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
