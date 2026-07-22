@@ -210,9 +210,8 @@ plugins:
   - source: github:quartz-community/breadcrumbs
     enabled: true
     layout:
-      position: beforeBody  
+      position: beforeBody
       priority: 5
-      condition: not-index
   - source: github:quartz-community/comments
     enabled: true
     options:
@@ -231,19 +230,18 @@ plugins:
     enabled: true
     options:
       links:
-        About: https://lsgeun.github.io/about
+        About: /about
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
   - source: github:quartz-community/recent-notes
     enabled: true
     options:
-      limit: 5
+      limit: 3
       showTags: false
     layout:
       position: afterBody
       priority: 40
-      condition: not-index
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
