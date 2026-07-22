@@ -233,7 +233,7 @@ plugins:
   - source: github:quartz-community/footer
     enabled: true
     options:
-      links:
+      links:w
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
