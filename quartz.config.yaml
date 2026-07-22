@@ -231,6 +231,7 @@ plugins:
     enabled: true
     options:
       links:
+        About: https://lsgeun.github.io/about
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
