@@ -154,13 +154,9 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
-    options:
-      title: 글
-      folderDefaultState: collapsed
-      folderClickBehavior: collapse
     layout:
       position: left
-      priority: 50
+      priority: 40
   - source: github:quartz-community/graph
     enabled: false
     layout:
@@ -230,15 +226,23 @@ plugins:
     layout:
       position: afterBody
       priority: 20
+      condition: not-index
   - source: github:quartz-community/footer
     enabled: true
     options:
-      links:w
+      links:
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    options:
+      limit: 5
+      showTags: false
+    layout:
+      position: afterBody
+      priority: 40
+      condition: not-index
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
