@@ -2,6 +2,7 @@
 tags:
 created: 2026-07-17
 title: lsgeun 개발 블로그
+unlisted: true
 comments: false
 ---
 
@@ -11,6 +12,10 @@ comments: false
 
 이 블로그에서 💻 **백엔드 개발**과 🧠 **지식 관리**에 관한 글이 작성하려고 합니다.
 그 이외에 🔗 **관련 주제**들에 대한 글도 작성하려고 합니다.
+
+#### 바로 가기 링크
+
+맨 아래에 [[index|Home]], [[about|About]], [[timeline|Timeline]]를 누르면 해당 페이지로 바로 이동합니다.
 
 #### 확대, 축소를 이용해 화면 조정
 

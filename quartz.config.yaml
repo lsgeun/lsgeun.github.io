@@ -230,7 +230,9 @@ plugins:
     enabled: true
     options:
       links:
+        Home: /
         About: /about
+        Timeline: /timeline
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
