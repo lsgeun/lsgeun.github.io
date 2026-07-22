@@ -235,7 +235,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/lsgeun
-        LinkedIn: https://www.linkedin.com/in/상근-이-8958aa3b3
+        LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:zlwkr1974@gmail.com
   - source: github:quartz-community/recent-notes
     enabled: false
