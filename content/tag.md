@@ -7,4 +7,4 @@ unlisted: true
 comments: false
 ---
 
-[[tags/자바]], [[tags/백엔드]], [[tags/프로젝트/ecommerce]], [[tags/moc]]
+[[tags/moc]], [[tags/백엔드]], [[tags/자바]], [[tags/프로젝트/ecommerce]]
