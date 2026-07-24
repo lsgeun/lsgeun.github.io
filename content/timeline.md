@@ -36,5 +36,4 @@ views:
     sort:
       - property: created
         direction: DESC
-
 ```
