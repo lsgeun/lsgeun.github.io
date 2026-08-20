@@ -233,7 +233,6 @@ plugins:
         Home: /
         About: /about
         Timeline: /timeline
-        MOC: /moc
         Tag: /tag
         Help: /help
         GitHub: https://github.com/lsgeun
