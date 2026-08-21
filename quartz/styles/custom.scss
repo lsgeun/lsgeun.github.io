@@ -1,3 +1,16 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* 탐색기, 목차, 백링크 브라우저 간격 표준화 */
+.explorer,
+.toc,
+.backlinks {
+  a {
+    display: block;
+    padding: 4px 0;   /* 위아래 적절한 유격을 유지 */
+    line-height: 1.5; /* 브라우저 폰트 렌더링 간격 통일 (1.3~1.4는 좁게 느껴짐) */
+
+    &:hover {
+      background-color: var(--highlight);
+    }
+  }
+}
