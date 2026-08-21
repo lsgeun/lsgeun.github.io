@@ -6,9 +6,9 @@ unlisted: true
 comments: false
 ---
 
-# 👋 환영합니다
+> 조금씩, 꾸준히, 확실히
 
-> 조금씩 꾸준히
+# 👋 환영합니다
 
 안녕하세요. [[about|lsgeun]] 입니다.
 
@@ -16,4 +16,4 @@ comments: false
 
 # 📖 도움말
 
-처음 오셨다면 [[help|Help]]를 먼저 읽어보시는 것을 추천합니다!
+> [!important] 처음 오셨다면 [[help|Help]]를 먼저 읽어보시는 것을 추천합니다!
