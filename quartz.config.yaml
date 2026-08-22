@@ -225,7 +225,7 @@ plugins:
         Help: /help
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
-        Gmail: mailto:zlwkr1974@gmail.com
+        Gmail: mailto:lsgeun.me@gmail.com
   - source: "@quartz-community/recent-notes"
     enabled: true
     options:
