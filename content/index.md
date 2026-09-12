@@ -1,10 +1,14 @@
 ---
-tags:
-created: 2026-07-17
 title: lsgeun 개발 블로그
+created: 2026-07-17
+updated: 2026-09-12
+tags:
+  - 유형/깃헙-개발-블로그-글
 unlisted: true
 comments: false
 ---
+
+![[pixel-text-PLAY-ALL-DAY-NO-BUGS-NO-LIFE-1.webp]]
 
 > 조금씩, 꾸준히, 확실히
 

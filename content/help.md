@@ -1,8 +1,9 @@
 ---
-tags:
-  - 
-created: 2026-07-23
 title: Help
+created: 2026-07-23
+updated: 2026-09-02
+tags:
+  - 유형/깃헙-개발-블로그-글
 unlisted: true
 comments: false
 ---

@@ -1,8 +1,9 @@
 ---
-tags:
-  - 
-created: 2026-07-22
 title: Timeline
+created: 2026-07-22
+updated: 2026-09-04
+tags:
+  - 유형/깃헙-개발-블로그-글
 unlisted: true
 comments: false
 ---
