@@ -1,7 +1,7 @@
 ---
 title: Help
 created: 2026-07-23
-updated: 2026-09-02
+updated: 2026-09-30
 tags:
   - 유형/깃헙-개발-블로그-글
 unlisted: true
