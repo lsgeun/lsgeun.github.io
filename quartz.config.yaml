@@ -82,7 +82,7 @@ plugins:
     order: 50
     layout:
       position: right
-      priority: 20
+      priority: 30
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -144,7 +144,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 40
+      priority: 50
   - source: "@quartz-community/graph"
     enabled: false
     layout:
@@ -162,7 +162,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 30
+      priority: 50
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
@@ -212,7 +212,7 @@ plugins:
         lang: ko
     layout:
       position: afterBody
-      priority: 20
+      priority: 10
       condition: not-index
   - source: "@quartz-community/footer"
     enabled: true
@@ -226,6 +226,9 @@ plugins:
         GitHub: https://github.com/lsgeun
         LinkedIn: https://www.linkedin.com/in/lsgeun
         Gmail: mailto:lsgeun.me@gmail.com
+    layout:
+      position: footer
+      priority: 50
   - source: "@quartz-community/recent-notes"
     enabled: true
     options:
