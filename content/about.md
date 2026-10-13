@@ -1,7 +1,7 @@
 ---
 title: lsgeun
 created: 2026-07-17
-updated: 2026-09-02
+updated: 2026-10-03
 tags:
   - 유형/깃헙-개발-블로그-글
 unlisted: true

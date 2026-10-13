@@ -104,6 +104,9 @@ export default (() => {
             return resource
           }
         })}
+
+        {/* (추가) 구글 서치 콘솔 인증 */}
+        <meta name="google-site-verification" content="lQyy4DrhpqO90ixWpWkoedAzW8mCSn8P-d0y9ir2hms" />
       </head>
     )
   }
